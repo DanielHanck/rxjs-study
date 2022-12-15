@@ -13,11 +13,15 @@ import {MatListModule} from '@angular/material/list';
 import { MaterialExampleModule } from 'src/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ObservableComponent } from './observable/observable.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { CodeExempleComponent } from './code-exemple/code-exemple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ObservableComponent
+    ObservableComponent,
+    IntroductionComponent,
+    CodeExempleComponent
   ],
   imports: [
     BrowserModule,

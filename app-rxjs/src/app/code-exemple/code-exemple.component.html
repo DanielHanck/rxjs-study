@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Exemplos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content >
+        <section *ngFor="let code of listCode">
+            <pre>
+                <code>{{code}}</code>
+            </pre>
+        </section>
+    </mat-card-content>
+</mat-card>

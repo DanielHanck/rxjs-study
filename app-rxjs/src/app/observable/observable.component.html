@@ -1,1 +1,14 @@
-<p>observable works!</p>
+<app-introduction [title]="title" [content]="content" ></app-introduction>
+
+<app-code-exemple [listCode]="listCode"></app-code-exemple>
+
+<mat-card>
+    <mat-card-content>
+        <button mat-raised-button color="primary" (click)="execute()">Resultado</button>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let emoji of listEmojis"  role="listitem">
+                <angular-emojis [name]="emoji.name" size="20"> </angular-emojis>
+            </mat-list-item>
+          </mat-list>
+    </mat-card-content>
+</mat-card>
