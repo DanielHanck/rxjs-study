@@ -15,13 +15,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { ObservableComponent } from './observable/observable.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { CodeExempleComponent } from './code-exemple/code-exemple.component';
+import { SubjectComponent } from './subject/subject.component';
+import { SubjectService } from './subject/subject.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ObservableComponent,
     IntroductionComponent,
-    CodeExempleComponent
+    CodeExempleComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,7 @@ import { CodeExempleComponent } from './code-exemple/code-exemple.component';
     MaterialExampleModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

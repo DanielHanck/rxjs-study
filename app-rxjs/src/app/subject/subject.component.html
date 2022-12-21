@@ -1,0 +1,17 @@
+<app-introduction [title]="title" [content]="content" ></app-introduction>
+
+<app-code-exemple [listCode]="listCode"></app-code-exemple>
+
+<mat-card>
+    <mat-card-content> 
+        <div class="box">            
+            <input type="text" placeholder="Ex. Pizza"  #text>
+            <button mat-raised-button color="primary" (click)="execute(text)">execute</button>
+        </div>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let message of listMessage"  role="listitem">
+                {{message}}                
+            </mat-list-item>
+        </mat-list>       
+    </mat-card-content>
+</mat-card>
